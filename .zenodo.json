@@ -5,19 +5,19 @@
     "related_identifiers": [
         {
         "scheme": "url",
-        "identifier": "https://github.com/mcuntz/pyjams/",
+        "identifier": "https://github.com/mcuntz/loggertools/",
         "relation": "isDerivedFrom",
         "resource_type": "software"
     },
         {
         "scheme": "url",
-        "identifier": "https://mcuntz.github.io/pyjams/",
+        "identifier": "https://mcuntz.github.io/loggertools/",
         "relation": "isDocumentedBy",
         "resource_type": "publication-softwaredocumentation"
     },
         {
         "scheme": "url",
-        "identifier": "https://pypi.org/project/pyjams/",
+        "identifier": "https://pypi.org/project/loggertools/",
         "relation": "isIdenticalTo",
         "resource_type": "software"
     }
