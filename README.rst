@@ -6,8 +6,8 @@ loggertools
 A Python port of the Control File Functions of the Logger Tools Software of Olaf
 Kolle, MPI-BGC Jena, (c) 2012.
 
-.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.5574388.svg
-   :target: https://doi.org/10.5281/zenodo.5574388
+.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.7072859.svg
+   :target: https://doi.org/10.5281/zenodo.7072859
    :alt: Zenodo DOI
 
 .. image:: https://badge.fury.io/py/loggertools.svg
