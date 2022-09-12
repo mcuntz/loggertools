@@ -1,0 +1,47 @@
+{
+    "language": "eng",
+    "license": "MIT",
+    "title": "loggertools: a Python port of the Control File Functions of Logtools, the Logger Tools Software of Olaf Kolle, MPI-BGC Jena, (c) 2012.",
+    "related_identifiers": [
+        {
+        "scheme": "url",
+        "identifier": "https://github.com/mcuntz/pyjams/",
+        "relation": "isDerivedFrom",
+        "resource_type": "software"
+    },
+        {
+        "scheme": "url",
+        "identifier": "https://mcuntz.github.io/pyjams/",
+        "relation": "isDocumentedBy",
+        "resource_type": "publication-softwaredocumentation"
+    },
+        {
+        "scheme": "url",
+        "identifier": "https://pypi.org/project/pyjams/",
+        "relation": "isIdenticalTo",
+        "resource_type": "software"
+    }
+    ],
+    "upload_type": "software",
+    "keywords": [
+        "Python utilities",
+        "Meteorology",
+        "Hydrology",
+        "Eddy covariance",
+        "Python"
+    ],
+    "creators": [
+        {
+        "orcid": "0000-0002-5966-1829",
+        "affiliation": "Institut National de Recherche pour l'Agriculture, l'Alimentation et l'Environnement - INRAE, Nancy, France",
+        "name": "Matthias Cuntz"
+    },
+        {
+        "orcid": "0000-0002-1132-2342",
+        "affiliation": "Max Planck Institute for Biogeochemistry, Jena, Germany",
+        "name": "Olaf Kolle"
+    }
+    ],
+    "access_right": "open",
+    "description": "<p><strong>loggertools</strong> is a Python port of the Control File Functions of Logtools, the Logger Tools Software of Olaf Kolle, MPI-BGC Jena, (c) 2012.\n\nFrom the Logtools manual: 'The functions range from simple mathematic operations to more complex and special procedures including functions for checking data. Most of the functions have the following appearance: `y = f(x, p1, p2, ..., pn)` where `y` is the variable in which the result of the function `f` is stored, `x` is the input variable of the function and `p1` to `pn` are parameters (numbers) of the function. An output variable (result of a function) may be the same as an input variable. Some functions need more than one input variable, some functions do not need any parameter and some functions (`mean`, `mini`, `maxi`) may have a variable number of input variables.'</p>"
+}
