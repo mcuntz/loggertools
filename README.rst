@@ -14,10 +14,9 @@ Kolle, MPI-BGC Jena, (c) 2012.
    :target: https://badge.fury.io/py/loggertools
    :alt: PyPI version
 
-..
-   .. image:: https://img.shields.io/conda/vn/conda-forge/loggertools.svg
-      :target: https://anaconda.org/conda-forge/loggertools
-      :alt: Conda version
+.. image:: https://img.shields.io/conda/vn/conda-forge/loggertools.svg
+   :target: https://anaconda.org/conda-forge/loggertools
+   :alt: Conda version
 
 .. image:: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
    :target: https://github.com/mcuntz/loggertools/blob/master/LICENSE
@@ -54,6 +53,45 @@ of input variables."
 The complete documentation of ``loggertools`` is available at:
 
    https://mcuntz.github.io/loggertools/
+
+and the API can be found here:
+
+   https://mcuntz.github.io/loggertools/html/loggertools.html
+
+
+Installation
+------------
+
+The easiest way to install is via `pip`:
+
+.. code-block:: bash
+
+   pip install loggertools
+
+or via `conda`:
+
+.. code-block:: bash
+
+   conda install -c conda-forge loggertools
+
+Requirements
+    * numpy_
+
+
+License
+-------
+
+``loggertools`` is distributed under the MIT License. See the LICENSE_ file for
+details.
+
+Copyright (c) 2014-2022 Matthias Cuntz, Olaf Kolle
+
+The project structure of ``loggertools`` has borrowed heavily from welltestpy_
+by `Sebastian Müller`_.
+
+
+Logger Tool Functions
+---------------------
 
 Some functions are renamed compared to the original logger tools:
 
@@ -96,11 +134,7 @@ elements are excluded from the calculations if any of the inputs equals `undef`.
 Only bit_test and the if-statements `ifeq`, `ifne`, `ifle`, `ifge`, `iflt`, `igt`
 do not have the `undef` keyword.
 
-
-Logger Tool Functions
----------------------
-
-The Looger Tools control functions are:
+The Logger Tools control functions implemented are:
 
     1. Assignment
 
@@ -710,30 +744,6 @@ The Looger Tools control functions are:
 
         # not implemented
 
-
-Installation
-------------
-
-The easiest way to install is via `pip`:
-
-.. code-block:: bash
-
-   pip install loggertools
-
-Requirements
-    * numpy_
-
-
-License
--------
-
-``loggertools`` is distributed under the MIT License. See the LICENSE_ file for
-details.
-
-Copyright (c) 2014-2022 Matthias Cuntz, Olaf Kolle
-
-The project structure of ``loggertools`` has borrowed heavily from welltestpy_
-by `Sebastian Müller`_.
 
 .. _LICENSE: https://github.com/mcuntz/pyjams/blob/main/LICENSE
 .. _Sebastian Müller: https://github.com/MuellerSeb

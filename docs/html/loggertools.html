@@ -4,8 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>loggertools &#8212; loggertools 0.0.0.dev0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
@@ -35,7 +34,7 @@
 
           <div class="body" role="main">
             
-  <section id="module-loggertools.loggertools">
+  <div class="section" id="module-loggertools.loggertools">
 <span id="loggertools"></span><h1>loggertools<a class="headerlink" href="#module-loggertools.loggertools" title="Permalink to this heading">¶</a></h1>
 <p>loggertools is a Python port of the Control File Functions of
 Logtools, the Logger Tools Software of Olaf Kolle, MPI-BGC Jena, (c) 2012.</p>
@@ -67,6 +66,10 @@ elements are excluded from the calculations if any of the inputs equals
 <p>Only bit_test and the if-statements <cite>ifeq</cite>, <cite>ifne</cite>, <cite>ifle</cite>, <cite>ifge</cite>, <cite>iflt</cite>,
 <cite>igt</cite> do not have the <cite>undef</cite> keyword.</p>
 <table class="autosummary longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#loggertools.loggertools.varchs" title="loggertools.loggertools.varchs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">varchs</span></code></a>(a[, undef])</p></td>
 <td><p>Change sign</p></td>
@@ -697,17 +700,17 @@ otherwise <cite>y = 0</cite>.</p>
 <p>For the behaviour of the original logger tools, set <cite>start=1</cite>.</p>
 <p>Negative <cite>b</cite> are not implemented.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable 1</p></li>
 <li><p><strong>b</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><em>ndarray</em>) – input variable 2</p></li>
 <li><p><strong>start</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – Counting of <cite>b</cite> starts at start (default: 0)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>Bitwise test</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)">int</a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)">list</a></p>
 </dd>
 </dl>
@@ -715,14 +718,14 @@ otherwise <cite>y = 0</cite>.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.cubic">
-<span class="sig-name descname"><span class="pre">cubic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#cubic"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.cubic" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">cubic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#cubic"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.cubic" title="Permalink to this definition">¶</a></dt>
 <dd><p>Apply 3rd order function</p>
 <blockquote>
 <div><p>y = cubic(x, a0, a1, a2, a3) means
 <cite>y = a0 + a1 * x + a2 * x**2 + a3 * x**3</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>a0</strong> (<em>ndarray</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – parameter 1</p></li>
@@ -733,10 +736,10 @@ otherwise <cite>y = 0</cite>.</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>3rd order function</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -744,13 +747,13 @@ otherwise <cite>y = 0</cite>.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.hms">
-<span class="sig-name descname"><span class="pre">hms</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#hms"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.hms" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">hms</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#hms"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.hms" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculate fraction of day from hours, minutes and seconds</p>
 <blockquote>
 <div><p>y = hms(h, m, s) means <cite>y = (h + m/60 + s/3600)/24</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>h</strong> (<em>ndarray</em>) – hour</p></li>
 <li><p><strong>m</strong> (<em>ndarray</em>) – minute</p></li>
@@ -759,10 +762,10 @@ otherwise <cite>y = 0</cite>.</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>fraction of day</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -770,13 +773,13 @@ otherwise <cite>y = 0</cite>.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.ifeq">
-<span class="sig-name descname"><span class="pre">ifeq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#ifeq"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.ifeq" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ifeq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#ifeq"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.ifeq" title="Permalink to this definition">¶</a></dt>
 <dd><p>If-equal statement</p>
 <blockquote>
 <div><p>y = ifeq(x, a0, a1, a2) means <cite>IF x == a0 THEN y = a1 ELSE y = a2</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>a0</strong> (<em>ndarray</em>) – compare to input <cite>x == a0</cite></p></li>
@@ -786,10 +789,10 @@ otherwise <cite>y = 0</cite>.</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>IF y == a0 THEN x = a1 ELSE x = a2</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -797,13 +800,13 @@ otherwise <cite>y = 0</cite>.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.ifge">
-<span class="sig-name descname"><span class="pre">ifge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#ifge"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.ifge" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ifge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#ifge"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.ifge" title="Permalink to this definition">¶</a></dt>
 <dd><p>If-greater-equal statement</p>
 <blockquote>
 <div><p>y = ifge(x, a0, a1, a2) means <cite>IF x &lt;= a0 THEN y = a1 ELSE y = a2</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>a0</strong> (<em>ndarray</em>) – compare to input <cite>x &gt;= a0</cite></p></li>
@@ -813,10 +816,10 @@ otherwise <cite>y = 0</cite>.</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>IF y &lt;= a0 THEN x = a1 ELSE x = a2</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -824,13 +827,13 @@ otherwise <cite>y = 0</cite>.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.ifgt">
-<span class="sig-name descname"><span class="pre">ifgt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#ifgt"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.ifgt" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ifgt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#ifgt"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.ifgt" title="Permalink to this definition">¶</a></dt>
 <dd><p>If-greater-than statement</p>
 <blockquote>
 <div><p>y = ifgt(x, a0, a1, a2) means <cite>IF x &gt; a0 THEN y = a1 ELSE y = a2</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>a0</strong> (<em>ndarray</em>) – compare to input <cite>x &gt; a0</cite></p></li>
@@ -840,10 +843,10 @@ otherwise <cite>y = 0</cite>.</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>IF y &gt; a0 THEN x = a1 ELSE x = a2</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -851,13 +854,13 @@ otherwise <cite>y = 0</cite>.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.ifle">
-<span class="sig-name descname"><span class="pre">ifle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#ifle"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.ifle" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ifle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#ifle"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.ifle" title="Permalink to this definition">¶</a></dt>
 <dd><p>If-lower-equal statement</p>
 <blockquote>
 <div><p>y = ifle(x, a0, a1, a2) means <cite>IF x &gt;= a0 THEN y = a1 ELSE y = a2</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>a0</strong> (<em>ndarray</em>) – compare to input <cite>x &lt;= a0</cite></p></li>
@@ -867,10 +870,10 @@ otherwise <cite>y = 0</cite>.</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>IF y &gt;= a0 THEN x = a1 ELSE x = a2</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -878,13 +881,13 @@ otherwise <cite>y = 0</cite>.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.iflt">
-<span class="sig-name descname"><span class="pre">iflt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#iflt"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.iflt" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">iflt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#iflt"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.iflt" title="Permalink to this definition">¶</a></dt>
 <dd><p>If-lower-than statement</p>
 <blockquote>
 <div><p>y = iflt(x, a0, a1, a2) means <cite>IF x &lt; a0 THEN y = a1 ELSE y = a2</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>a0</strong> (<em>ndarray</em>) – compare to input <cite>x &lt; a0</cite></p></li>
@@ -894,10 +897,10 @@ otherwise <cite>y = 0</cite>.</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>IF x &lt; a0 THEN y = a1 ELSE y = a2</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -905,13 +908,13 @@ otherwise <cite>y = 0</cite>.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.ifne">
-<span class="sig-name descname"><span class="pre">ifne</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#ifne"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.ifne" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">ifne</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#ifne"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.ifne" title="Permalink to this definition">¶</a></dt>
 <dd><p>If-not-equal statements</p>
 <blockquote>
 <div><p>y = ifne(x, a0, a1, a2) means <cite>IF x != a0 THEN y = a1 ELSE y = a2</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>a0</strong> (<em>ndarray</em>) – compare to input <cite>x != a0</cite></p></li>
@@ -925,10 +928,10 @@ otherwise <cite>y = 0</cite>.</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>IF y != a0 THEN x = a1 ELSE x = a2</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -936,7 +939,7 @@ otherwise <cite>y = 0</cite>.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.limits">
-<span class="sig-name descname"><span class="pre">limits</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mini</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#limits"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.limits" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">limits</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mini</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#limits"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.limits" title="Permalink to this definition">¶</a></dt>
 <dd><p>Replacement of underflows or overflows by undef</p>
 <blockquote>
 <div><p>y = limits(x, mini, maxi) means
@@ -945,7 +948,7 @@ otherwise <cite>y = 0</cite>.</p>
 <p>This function may be used to check values lying in between certain limits.</p>
 <p>If one of the limits is exceeded the value is set to <cite>undef</cite>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>mini</strong> (<em>ndarray</em>) – lower threshold</p></li>
@@ -954,10 +957,10 @@ otherwise <cite>y = 0</cite>.</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>underflows or overflows replaced by <cite>undef</cite></p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -965,13 +968,13 @@ otherwise <cite>y = 0</cite>.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.lin">
-<span class="sig-name descname"><span class="pre">lin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#lin"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.lin" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">lin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#lin"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.lin" title="Permalink to this definition">¶</a></dt>
 <dd><p>Apply linear function</p>
 <blockquote>
 <div><p>y = lin(x, a0, a1) means <cite>y = a0 + a1 * x</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>a0</strong> (<em>ndarray</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – parameter 1</p></li>
@@ -980,10 +983,10 @@ otherwise <cite>y = 0</cite>.</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>linear function</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -991,13 +994,13 @@ otherwise <cite>y = 0</cite>.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.maxi">
-<span class="sig-name descname"><span class="pre">maxi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#maxi"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.maxi" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">maxi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#maxi"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.maxi" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculation of maximum value</p>
 <blockquote>
 <div><p>y = maxi(x) means <cite>y = max(x[0], x[1], …, x[n-1])</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>axis</strong> (<em>None</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><em>tuple of ints</em><em>, </em><em>optional</em>) – <p>Axis or axes along which the maximum are computed.
@@ -1009,10 +1012,10 @@ instead of a single axis or all the axes as before.</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>maximum value</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1020,13 +1023,13 @@ instead of a single axis or all the axes as before.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.mean">
-<span class="sig-name descname"><span class="pre">mean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#mean"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.mean" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">mean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#mean"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.mean" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculation of mean value</p>
 <blockquote>
 <div><p>y = mean(x) means <cite>y = (x[0] + x[1] + … + x[n-1]) / n</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>axis</strong> (<em>None</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><em>tuple of ints</em><em>, </em><em>optional</em>) – <p>Axis or axes along which the means are computed.
@@ -1038,10 +1041,10 @@ instead of a single axis or all the axes as before.</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>mean value</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1049,7 +1052,7 @@ instead of a single axis or all the axes as before.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.met_alb">
-<span class="sig-name descname"><span class="pre">met_alb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">swd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">swu</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">swdmin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">swumin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_alb"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_alb" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">met_alb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">swd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">swu</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">swdmin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">swumin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_alb"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_alb" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculation of albedo from short wave downward and upward radiation</p>
 <blockquote>
 <div><p>y = met_alb(swd, swu)</p>
@@ -1061,7 +1064,7 @@ instead of a single axis or all the axes as before.</p>
 <p>If <cite>swd &lt; swdmin</cite> (50 W m-2) or <cite>swu &lt; swumin</cite> (10 W m-2),
 the result is undef.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>swd</strong> (<em>ndarray</em>) – shortwave downward radiation [W m-2]</p></li>
 <li><p><strong>swu</strong> (<em>ndarray</em>) – shortwave upward radiation [W m-2]</p></li>
@@ -1071,10 +1074,10 @@ the result is undef.</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>albedo in %</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1082,7 +1085,7 @@ the result is undef.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.met_albl">
-<span class="sig-name descname"><span class="pre">met_albl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">swd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">swu</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">swdmin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">swumin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_albl"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_albl" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">met_albl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">swd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">swu</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">swdmin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">swumin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_albl"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_albl" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculation of albedo from short wave downward and upward radiation with
 limits</p>
 <blockquote>
@@ -1094,7 +1097,7 @@ limits</p>
 </div></blockquote>
 <p>If <cite>swd &lt; swdmin</cite> or <cite>swu &lt; swumin</cite>, the result is <cite>undef</cite>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>swd</strong> (<em>ndarray</em>) – shortwave downward radiation [W m-2]</p></li>
 <li><p><strong>swu</strong> (<em>ndarray</em>) – shortwave upward radiation [W m-2]</p></li>
@@ -1106,10 +1109,10 @@ limits</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>albedo in %</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1117,7 +1120,7 @@ limits</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.met_dpt">
-<span class="sig-name descname"><span class="pre">met_dpt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rh</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_dpt"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_dpt" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">met_dpt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rh</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_dpt"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_dpt" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculation of dew point temperature</p>
 <blockquote>
 <div><p>y = met_dpt(T, rh)</p>
@@ -1130,7 +1133,7 @@ formulas:</p>
 <p><cite>y = 234.175 * ln(E / 6.1078) / (17.08085 - ln(E / 6.1078))</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>T</strong> (<em>ndarray</em>) – air temperature [degC]</p></li>
 <li><p><strong>rh</strong> (<em>ndarray</em>) – relative humidity [%]</p></li>
@@ -1138,10 +1141,10 @@ formulas:</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>dew point temperature in degC</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1149,7 +1152,7 @@ formulas:</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.met_h2oc">
-<span class="sig-name descname"><span class="pre">met_h2oc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rh</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_h2oc"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_h2oc" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">met_h2oc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rh</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_h2oc"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_h2oc" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculation of water vapour concentration</p>
 <blockquote>
 <div><p>y = met_h2oc(T, rh, p)</p>
@@ -1162,7 +1165,7 @@ following formulas:</p>
 <p><cite>y = 0.1 * E / (0.001 * p * 100 * 0.001)</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>T</strong> (<em>ndarray</em>) – air temperature [degC]</p></li>
 <li><p><strong>rh</strong> (<em>ndarray</em>) – relative humidity [%]</p></li>
@@ -1171,10 +1174,10 @@ following formulas:</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>water vapour concentration in mmol mol-1</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1182,7 +1185,7 @@ following formulas:</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.met_h2oc_rh">
-<span class="sig-name descname"><span class="pre">met_h2oc_rh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_h2oc_rh"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_h2oc_rh" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">met_h2oc_rh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_h2oc_rh"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_h2oc_rh" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculation of relative humidity from water vapour concentration</p>
 <blockquote>
 <div><p>y = met_h2oc_rh(T, [H2O], p)</p>
@@ -1195,7 +1198,7 @@ formulas:</p>
 <p><cite>y = 100 * E / Es</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>T</strong> (<em>ndarray</em>) – air temperature [degC]</p></li>
 <li><p><strong>h</strong> (<em>ndarray</em>) – water vapour concentration [mmol mol-1]</p></li>
@@ -1204,10 +1207,10 @@ formulas:</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>relative humidity in %</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1215,7 +1218,7 @@ formulas:</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.met_lwrad">
-<span class="sig-name descname"><span class="pre">met_lwrad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Tp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_lwrad"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_lwrad" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">met_lwrad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Tp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_lwrad"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_lwrad" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculation of long wave radiation from net radiometer</p>
 <blockquote>
 <div><p>y = met_lwrad(x, Tp)</p>
@@ -1230,7 +1233,7 @@ and <cite>fl</cite> is the factor for long wave radiation (reciprocal value of
 sensitivity) in W m-2 per mV.</p>
 <p>The function assumes that <cite>fl</cite> was already applied before.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>y</strong> (<em>ndarray</em>) – output voltage of the net radiometer [mV]</p></li>
 <li><p><strong>Tp</strong> (<em>ndarray</em>) – pyranometer temperature, i.e. the temperature of the net radiometer
@@ -1239,10 +1242,10 @@ body [degC]</p></li>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>total radiation in W m-2</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1250,7 +1253,7 @@ body [degC]</p></li>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.met_rho">
-<span class="sig-name descname"><span class="pre">met_rho</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rh</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_rho"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_rho" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">met_rho</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rh</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_rho"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_rho" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculation of air density</p>
 <blockquote>
 <div><p>y = met_rho(T, rh, p)</p>
@@ -1265,7 +1268,7 @@ formulas:</p>
 <p><cite>y = p * 100 / (287.05 * (Tv + T0))</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>T</strong> (<em>ndarray</em>) – air temperature [degC]</p></li>
 <li><p><strong>rh</strong> (<em>ndarray</em>) – relative humidity [%]</p></li>
@@ -1274,10 +1277,10 @@ formulas:</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>air density in kg m-3</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1285,7 +1288,7 @@ formulas:</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.met_sh">
-<span class="sig-name descname"><span class="pre">met_sh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rh</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_sh"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_sh" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">met_sh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rh</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_sh"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_sh" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculation of specific humidity</p>
 <blockquote>
 <div><p>y = met_sh(T, rh, p)</p>
@@ -1298,7 +1301,7 @@ formulas:</p>
 <p><cite>y = 622 * E / (p - 0.378 * E)</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>T</strong> (<em>ndarray</em>) – air temperature [degC]</p></li>
 <li><p><strong>rh</strong> (<em>ndarray</em>) – relative humidity [%]</p></li>
@@ -1307,10 +1310,10 @@ formulas:</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>specific humidity in g kg-1</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1318,7 +1321,7 @@ formulas:</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.met_tpot">
-<span class="sig-name descname"><span class="pre">met_tpot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_tpot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_tpot" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">met_tpot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_tpot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_tpot" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculation of potential temperature</p>
 <blockquote>
 <div><p>y = met_tpot(T, p)</p>
@@ -1329,7 +1332,7 @@ formula:</p>
 <div><p><cite>y = (T + T0) * (1000 / p)**0.286</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>T</strong> (<em>ndarray</em>) – air temperature [degC]</p></li>
 <li><p><strong>p</strong> (<em>ndarray</em>) – air pressure [hPa = mbar]</p></li>
@@ -1337,10 +1340,10 @@ formula:</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>potential temperature in K</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1348,7 +1351,7 @@ formula:</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.met_trad">
-<span class="sig-name descname"><span class="pre">met_trad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Rl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">epsilon</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_trad"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_trad" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">met_trad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Rl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">epsilon</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_trad"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_trad" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculation of radiation temperature from long wave radiation</p>
 <blockquote>
 <div><p>y = met_trad(Rl, epsilon)</p>
@@ -1361,7 +1364,7 @@ formula:</p>
 <p>where <cite>sigma = 5.67 * 10**-8</cite> W m-2 K-4 is the
 Stephan-Boltzmann constant.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>Rl</strong> (<em>ndarray</em>) – longwave radiation [W m-2]</p></li>
 <li><p><strong>epsilon</strong> (<em>ndarray</em>) – long wave emissivity of the surface [0-1]</p></li>
@@ -1369,10 +1372,10 @@ Stephan-Boltzmann constant.</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>radiation temperature in degC</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1380,7 +1383,7 @@ Stephan-Boltzmann constant.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.met_urot">
-<span class="sig-name descname"><span class="pre">met_urot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_urot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_urot" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">met_urot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_urot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_urot" title="Permalink to this definition">¶</a></dt>
 <dd><p>Rotation of u-component of wind vector</p>
 <blockquote>
 <div><p>y = met_urot(u, v, a)</p>
@@ -1390,7 +1393,7 @@ Stephan-Boltzmann constant.</p>
 <div><p><cite>y = u * cos (a) + v * sin (a)</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>u</strong> (<em>ndarray</em>) – u-component of the wind vector</p></li>
 <li><p><strong>v</strong> (<em>ndarray</em>) – v-component of the wind vector</p></li>
@@ -1399,10 +1402,10 @@ Stephan-Boltzmann constant.</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>rotated u-component</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1410,7 +1413,7 @@ Stephan-Boltzmann constant.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.met_uv_wd">
-<span class="sig-name descname"><span class="pre">met_uv_wd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_uv_wd"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_uv_wd" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">met_uv_wd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_uv_wd"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_uv_wd" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculation of wind direction from u- and v-component of wind vector</p>
 <blockquote>
 <div><p>y = met_uv_wd(u, v)</p>
@@ -1425,7 +1428,7 @@ formulas:</p>
 <p><cite>IF u &lt; 0 THEN y = 90 - arctan(v / u)</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>u</strong> (<em>ndarray</em>) – u-component of the wind vector</p></li>
 <li><p><strong>v</strong> (<em>ndarray</em>) – v-component of the wind vector</p></li>
@@ -1433,10 +1436,10 @@ formulas:</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>horizontal wind velocity</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1444,7 +1447,7 @@ formulas:</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.met_uv_wv">
-<span class="sig-name descname"><span class="pre">met_uv_wv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_uv_wv"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_uv_wv" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">met_uv_wv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_uv_wv"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_uv_wv" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculation of wind velocity from u- and v-component of wind vector</p>
 <blockquote>
 <div><p>y = met_uv_wv(u, v)</p>
@@ -1455,7 +1458,7 @@ formula:</p>
 <div><p><cite>y = sqrt(u**2 + v**2)</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>u</strong> (<em>ndarray</em>) – u-component of the wind vector</p></li>
 <li><p><strong>v</strong> (<em>ndarray</em>) – v-component of the wind vector</p></li>
@@ -1463,10 +1466,10 @@ formula:</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>horizontal wind velocity</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1474,7 +1477,7 @@ formula:</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.met_vpact">
-<span class="sig-name descname"><span class="pre">met_vpact</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rh</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_vpact"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_vpact" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">met_vpact</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rh</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_vpact"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_vpact" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculation of actual water vapour pressure</p>
 <blockquote>
 <div><p>y = met_vpact(T, rh)</p>
@@ -1486,7 +1489,7 @@ the following formulas:</p>
 <p><cite>y = Es * rh / 100</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>T</strong> (<em>ndarray</em>) – air temperature [degC]</p></li>
 <li><p><strong>rh</strong> (<em>ndarray</em>) – relative humidity [%]</p></li>
@@ -1494,10 +1497,10 @@ the following formulas:</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>actual water vapour pressure in mbar (hPa)</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1505,7 +1508,7 @@ the following formulas:</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.met_vpdef">
-<span class="sig-name descname"><span class="pre">met_vpdef</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rh</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_vpdef"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_vpdef" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">met_vpdef</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rh</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_vpdef"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_vpdef" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculation of water vapour pressure deficit</p>
 <blockquote>
 <div><p>y = met_vpdef(T, rh)</p>
@@ -1518,7 +1521,7 @@ the following formulas:</p>
 <p><cite>y = Es - E</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>T</strong> (<em>ndarray</em>) – air temperature [degC]</p></li>
 <li><p><strong>rh</strong> (<em>ndarray</em>) – relative humidity [%]</p></li>
@@ -1526,10 +1529,10 @@ the following formulas:</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>water vapour pressure deficit in mbar (hPa)</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1537,7 +1540,7 @@ the following formulas:</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.met_vpmax">
-<span class="sig-name descname"><span class="pre">met_vpmax</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_vpmax"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_vpmax" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">met_vpmax</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">T</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_vpmax"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_vpmax" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculation of saturation water vapour pressure</p>
 <blockquote>
 <div><p>y = met_vpmax(T)</p>
@@ -1548,17 +1551,17 @@ to the following formula:</p>
 <div><p><cite>y = 6.1078 * exp(17.08085 * T / (234.175 + T))</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>T</strong> (<em>ndarray</em>) – air temperature [degC]</p></li>
 <li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>saturation water vapour pressure in mbar (hPa)</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1566,7 +1569,7 @@ to the following formula:</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.met_vrot">
-<span class="sig-name descname"><span class="pre">met_vrot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_vrot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_vrot" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">met_vrot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">u</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">v</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_vrot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_vrot" title="Permalink to this definition">¶</a></dt>
 <dd><p>Rotation of v-component of wind vector</p>
 <blockquote>
 <div><p>y = met_vrot(u, v, a)</p>
@@ -1576,7 +1579,7 @@ to the following formula:</p>
 <div><p><cite>y = -u * sin (a) + v * cos (a)</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>u</strong> (<em>ndarray</em>) – u-component of the wind vector</p></li>
 <li><p><strong>v</strong> (<em>ndarray</em>) – v-component of the wind vector</p></li>
@@ -1585,10 +1588,10 @@ to the following formula:</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>rotated v-component</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1596,7 +1599,7 @@ to the following formula:</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.met_wdrot">
-<span class="sig-name descname"><span class="pre">met_wdrot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_wdrot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_wdrot" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">met_wdrot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_wdrot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_wdrot" title="Permalink to this definition">¶</a></dt>
 <dd><p>Rotation of wind direction</p>
 <blockquote>
 <div><p>y = met_wdrot(wd, a)</p>
@@ -1609,7 +1612,7 @@ formulas:</p>
 <p><cite>IF y &lt;= 360 THEN y = y - 360</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>wd</strong> (<em>ndarray</em>) – wind direction [degree]</p></li>
 <li><p><strong>a</strong> (<em>ndarray</em>) – rotation angle (positive is clockwise) [degree]</p></li>
@@ -1617,10 +1620,10 @@ formulas:</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>rotated wind direction</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1628,7 +1631,7 @@ formulas:</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.met_wvwd_u">
-<span class="sig-name descname"><span class="pre">met_wvwd_u</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_wvwd_u"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_wvwd_u" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">met_wvwd_u</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_wvwd_u"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_wvwd_u" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculation of u-component of wind vector from wind velocity and
 wind direction</p>
 <blockquote>
@@ -1640,7 +1643,7 @@ formula:</p>
 <div><p><cite>y = -wv * sin(wd)</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>wv</strong> (<em>ndarray</em>) – horizontal wind velocity [m s-1]</p></li>
 <li><p><strong>wd</strong> (<em>ndarray</em>) – horizontal wind direction [degree]</p></li>
@@ -1648,10 +1651,10 @@ formula:</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>u-component of the wind vector</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1659,7 +1662,7 @@ formula:</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.met_wvwd_v">
-<span class="sig-name descname"><span class="pre">met_wvwd_v</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_wvwd_v"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_wvwd_v" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">met_wvwd_v</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wd</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#met_wvwd_v"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.met_wvwd_v" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculation of v-component of wind vector from wind velocity and
 wind direction</p>
 <blockquote>
@@ -1671,7 +1674,7 @@ formula:</p>
 <div><p><cite>y = -wv * cos(wd)</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>wv</strong> (<em>ndarray</em>) – horizontal wind velocity [m s-1]</p></li>
 <li><p><strong>wd</strong> (<em>ndarray</em>) – horizontal wind direction [degree]</p></li>
@@ -1679,10 +1682,10 @@ formula:</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>v-component of the wind vector</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1690,13 +1693,13 @@ formula:</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.mini">
-<span class="sig-name descname"><span class="pre">mini</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#mini"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.mini" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">mini</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#mini"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.mini" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calculation of minimum value</p>
 <blockquote>
 <div><p>y = mini(x) means <cite>y = min(x[0], x[1], …, x[n-1])</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>axis</strong> (<em>None</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><em>tuple of ints</em><em>, </em><em>optional</em>) – <p>Axis or axes along which the minimum are computed.
@@ -1708,10 +1711,10 @@ instead of a single axis or all the axes as before.</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>minimum value</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1719,13 +1722,13 @@ instead of a single axis or all the axes as before.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.quad">
-<span class="sig-name descname"><span class="pre">quad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#quad"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.quad" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">quad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#quad"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.quad" title="Permalink to this definition">¶</a></dt>
 <dd><p>Apply 2nd order function</p>
 <blockquote>
 <div><p>y = quad(x, a0, a1, a2) means <cite>y = a0 + a1 * x + a2 * x**2</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>a0</strong> (<em>ndarray</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – parameter 1</p></li>
@@ -1735,10 +1738,10 @@ instead of a single axis or all the axes as before.</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>2nd order function</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1746,7 +1749,7 @@ instead of a single axis or all the axes as before.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.sethigh">
-<span class="sig-name descname"><span class="pre">sethigh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ishigh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#sethigh"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.sethigh" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">sethigh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ishigh</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#sethigh"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.sethigh" title="Permalink to this definition">¶</a></dt>
 <dd><p>Replacement of overflows by new value</p>
 <blockquote>
 <div><p>t = sethigh(x, high, ishigh) means
@@ -1756,7 +1759,7 @@ instead of a single axis or all the axes as before.</p>
 <p>This function may be used to adjust relative humidity values of a little
 bit more than 100% to 100%.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>high</strong> (<em>ndarray</em>) – upper threshold</p></li>
@@ -1765,10 +1768,10 @@ bit more than 100% to 100%.</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>overflows replaced by new value</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1776,7 +1779,7 @@ bit more than 100% to 100%.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.setlow">
-<span class="sig-name descname"><span class="pre">setlow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">low</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">islow</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#setlow"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.setlow" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">setlow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">low</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">islow</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#setlow"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.setlow" title="Permalink to this definition">¶</a></dt>
 <dd><p>Replacement of underflows by new value</p>
 <blockquote>
 <div><p>y = setlow(x, low, islow) means
@@ -1786,7 +1789,7 @@ bit more than 100% to 100%.</p>
 <p>This function may be used to adjust small negative values of short wave
 radiation during nighttime to zero values.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>low</strong> (<em>ndarray</em>) – lower threshold</p></li>
@@ -1795,10 +1798,10 @@ radiation during nighttime to zero values.</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>underflows replaced by new value</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1806,14 +1809,14 @@ radiation during nighttime to zero values.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.varadd">
-<span class="sig-name descname"><span class="pre">varadd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#varadd"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.varadd" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">varadd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#varadd"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.varadd" title="Permalink to this definition">¶</a></dt>
 <dd><p>Addition</p>
 <blockquote>
 <div><p>y = varadd(a, b) means <cite>y = a + b</cite>, where <cite>a</cite> and <cite>b</cite> are ndarray or
 float.</p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>a</strong> (<em>ndarray</em>) – input variable 1</p></li>
 <li><p><strong>b</strong> (<em>ndarray</em>) – input variable 2</p></li>
@@ -1821,10 +1824,10 @@ float.</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>Addition</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1832,23 +1835,23 @@ float.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.varchs">
-<span class="sig-name descname"><span class="pre">varchs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#varchs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.varchs" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">varchs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#varchs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.varchs" title="Permalink to this definition">¶</a></dt>
 <dd><p>Change sign</p>
 <blockquote>
 <div><p>y = varchs(a) means <cite>y = -a</cite>, where <cite>a</cite> is ndarray or float.</p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>a</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>Changed sign</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1856,14 +1859,14 @@ float.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.vardiv">
-<span class="sig-name descname"><span class="pre">vardiv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#vardiv"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.vardiv" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">vardiv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#vardiv"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.vardiv" title="Permalink to this definition">¶</a></dt>
 <dd><p>Division</p>
 <blockquote>
 <div><p>y = vardiv(a, b) means <cite>y = a / b</cite>, where <cite>a</cite> and <cite>b</cite> are ndarray or
 float.</p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>a</strong> (<em>ndarray</em>) – dividend</p></li>
 <li><p><strong>b</strong> (<em>ndarray</em>) – divisor</p></li>
@@ -1871,10 +1874,10 @@ float.</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>Division</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1882,23 +1885,23 @@ float.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.varexp">
-<span class="sig-name descname"><span class="pre">varexp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#varexp"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.varexp" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">varexp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#varexp"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.varexp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Exponentiation of e</p>
 <blockquote>
 <div><p>y = varexp(a) means <cite>y = exp(a)</cite>, where <cite>a</cite> is ndarray or float.</p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>a</strong> (<em>ndarray</em>) – exponent</p></li>
 <li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>Exponentiation</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1906,23 +1909,23 @@ float.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.varlog">
-<span class="sig-name descname"><span class="pre">varlog</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#varlog"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.varlog" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">varlog</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#varlog"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.varlog" title="Permalink to this definition">¶</a></dt>
 <dd><p>Natural logarithm</p>
 <blockquote>
 <div><p>y = varlog(a) means <cite>y = ln(a)</cite>, where <cite>a</cite> is ndarray or float.</p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>a</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>Natural logarithm</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1930,14 +1933,14 @@ float.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.varmul">
-<span class="sig-name descname"><span class="pre">varmul</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#varmul"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.varmul" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">varmul</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#varmul"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.varmul" title="Permalink to this definition">¶</a></dt>
 <dd><p>Multiplication</p>
 <blockquote>
 <div><p>y = varmul(a, b) means <cite>y = a * b</cite>, where <cite>a</cite> and <cite>b</cite> are ndarray or
 float.</p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>a</strong> (<em>ndarray</em>) – input variable 1</p></li>
 <li><p><strong>b</strong> (<em>ndarray</em>) – input variable 2</p></li>
@@ -1945,10 +1948,10 @@ float.</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>Multiplication</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1956,14 +1959,14 @@ float.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.varpot">
-<span class="sig-name descname"><span class="pre">varpot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#varpot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.varpot" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">varpot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#varpot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.varpot" title="Permalink to this definition">¶</a></dt>
 <dd><p>Exponentiation</p>
 <blockquote>
 <div><p>y = varpot(a, b) means <cite>y = a**b</cite>, where <cite>a</cite> and <cite>b</cite> are ndarray or
 float.</p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>a</strong> (<em>ndarray</em>) – base</p></li>
 <li><p><strong>b</strong> (<em>ndarray</em>) – exponent</p></li>
@@ -1971,10 +1974,10 @@ float.</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>Exponentiation</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1982,23 +1985,23 @@ float.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.varsqr">
-<span class="sig-name descname"><span class="pre">varsqr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#varsqr"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.varsqr" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">varsqr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#varsqr"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.varsqr" title="Permalink to this definition">¶</a></dt>
 <dd><p>Square root</p>
 <blockquote>
 <div><p>y = varsqr(a) means <cite>y = sqrt(a)</cite>, where <cite>a</cite> is ndarray or float.</p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>a</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>Square root</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -2006,23 +2009,23 @@ float.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.varsqrt">
-<span class="sig-name descname"><span class="pre">varsqrt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#varsqrt"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.varsqrt" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">varsqrt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#varsqrt"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.varsqrt" title="Permalink to this definition">¶</a></dt>
 <dd><p>Square root</p>
 <blockquote>
 <div><p>y = varsqrt(a) means <cite>y = sqrt(a)</cite>, where <cite>a</cite> is ndarray or float.</p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>a</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>Square root</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -2030,14 +2033,14 @@ float.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="loggertools.loggertools.varsub">
-<span class="sig-name descname"><span class="pre">varsub</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#varsub"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.varsub" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">varsub</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">undef</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-9999.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/loggertools/loggertools.html#varsub"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#loggertools.loggertools.varsub" title="Permalink to this definition">¶</a></dt>
 <dd><p>Subtraction</p>
 <blockquote>
 <div><p>y = varsub(a, b) means <cite>y = a - b</cite>, where <cite>a</cite> and <cite>b</cite> are ndarray or
 float.</p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>a</strong> (<em>ndarray</em>) – input variable 1</p></li>
 <li><p><strong>b</strong> (<em>ndarray</em>) – input variable 2</p></li>
@@ -2045,16 +2048,16 @@ float.</p>
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>Subtraction</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
 </dd></dl>
 
-</section>
+</div>
 
 
           </div>
@@ -2094,7 +2097,9 @@ float.</p>
     
     <li class="toctree-l1"><a href="https://doi.org/10.5281/zenodo.5574388">loggertools @ Zenodo</a></li>
     
-    <li class="toctree-l1"><a href="https://pypi.org/project/loggertools/">loggertools @ PyPI</a></li>
+    <li class="toctree-l1"><a href="https://pypi.org/project/loggertools">loggertools @ PyPI</a></li>
+    
+    <li class="toctree-l1"><a href="https://anaconda.org/conda-forge/loggertools">loggertools @ conda-forge</a></li>
     
 </ul>
 <div class="relations">
@@ -2126,7 +2131,7 @@ float.</p>
       &copy;2014-2022, Matthias Cuntz, Olaf Kolle.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.2</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.1.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

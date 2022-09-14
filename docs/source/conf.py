@@ -169,7 +169,8 @@ html_theme_options = {
     'extra_nav_links': {
         'loggertools @ GitHub': "https://github.com/mcuntz/loggertools",
         'loggertools @ Zenodo': "https://doi.org/10.5281/zenodo.5574388",
-        'loggertools @ PyPI': "https://pypi.org/project/loggertools/"
+        'loggertools @ PyPI': "https://pypi.org/project/loggertools",
+        'loggertools @ conda-forge': "https://anaconda.org/conda-forge/loggertools"
     },
 }
 
