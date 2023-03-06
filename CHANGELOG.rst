@@ -1,6 +1,9 @@
 Changelog
 ---------
 
+v1.0 (Mar 2023)
+    * Final release of package ``loggertools``.
+
 v0.100 (Mar 2023)
     * Release to get DOI from Zenodo.
 
