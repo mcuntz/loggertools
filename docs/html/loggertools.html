@@ -4,16 +4,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
     <title>loggertools &#8212; loggertools 0.0.0.dev0 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/css/custom.css" />
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Changelog" href="changelog.html" />
@@ -34,7 +33,7 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="module-loggertools.loggertools">
+  <section id="module-loggertools.loggertools">
 <span id="loggertools"></span><h1>loggertools<a class="headerlink" href="#module-loggertools.loggertools" title="Permalink to this heading">¶</a></h1>
 <p>loggertools is a Python port of the Control File Functions of
 Logtools, the Logger Tools Software of Olaf Kolle, MPI-BGC Jena, (c) 2012.</p>
@@ -66,10 +65,6 @@ elements are excluded from the calculations if any of the inputs equals
 <p>Only bit_test and the if-statements <cite>ifeq</cite>, <cite>ifne</cite>, <cite>ifle</cite>, <cite>ifge</cite>, <cite>iflt</cite>,
 <cite>igt</cite> do not have the <cite>undef</cite> keyword.</p>
 <table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#loggertools.loggertools.varchs" title="loggertools.loggertools.varchs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">varchs</span></code></a>(a[, undef])</p></td>
 <td><p>Change sign</p></td>
@@ -700,18 +695,18 @@ otherwise <cite>y = 0</cite>.</p>
 <p>For the behaviour of the original logger tools, set <cite>start=1</cite>.</p>
 <p>Negative <cite>b</cite> are not implemented.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable 1</p></li>
-<li><p><strong>b</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><em>ndarray</em>) – input variable 2</p></li>
-<li><p><strong>start</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – Counting of <cite>b</cite> starts at start (default: 0)</p></li>
+<li><p><strong>b</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em> or </em><em>ndarray</em>) – input variable 2</p></li>
+<li><p><strong>start</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><em>optional</em>) – Counting of <cite>b</cite> starts at start (default: 0)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Bitwise test</p>
 </dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)">int</a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)">list</a></p>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)">int</a> or <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.11)">list</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -725,21 +720,21 @@ otherwise <cite>y = 0</cite>.</p>
 <cite>y = a0 + a1 * x + a2 * x**2 + a3 * x**3</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
-<li><p><strong>a0</strong> (<em>ndarray</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – parameter 1</p></li>
-<li><p><strong>a1</strong> (<em>ndarray</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – parameter 2</p></li>
-<li><p><strong>a2</strong> (<em>ndarray</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – parameter 3</p></li>
-<li><p><strong>a3</strong> (<em>ndarray</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – parameter 4</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>a0</strong> (<em>ndarray</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – parameter 1</p></li>
+<li><p><strong>a1</strong> (<em>ndarray</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – parameter 2</p></li>
+<li><p><strong>a2</strong> (<em>ndarray</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – parameter 3</p></li>
+<li><p><strong>a3</strong> (<em>ndarray</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – parameter 4</p></li>
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>3rd order function</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -753,19 +748,19 @@ otherwise <cite>y = 0</cite>.</p>
 <div><p>y = hms(h, m, s) means <cite>y = (h + m/60 + s/3600)/24</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>h</strong> (<em>ndarray</em>) – hour</p></li>
 <li><p><strong>m</strong> (<em>ndarray</em>) – minute</p></li>
 <li><p><strong>s</strong> (<em>ndarray</em>) – second</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>fraction of day</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -779,20 +774,20 @@ otherwise <cite>y = 0</cite>.</p>
 <div><p>y = ifeq(x, a0, a1, a2) means <cite>IF x == a0 THEN y = a1 ELSE y = a2</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>a0</strong> (<em>ndarray</em>) – compare to input <cite>x == a0</cite></p></li>
 <li><p><strong>a1</strong> (<em>ndarray</em>) – result if <cite>x == a0</cite></p></li>
 <li><p><strong>a2</strong> (<em>ndarray</em>) – result if <cite>x != a0</cite></p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>IF y == a0 THEN x = a1 ELSE x = a2</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -806,20 +801,20 @@ otherwise <cite>y = 0</cite>.</p>
 <div><p>y = ifge(x, a0, a1, a2) means <cite>IF x &lt;= a0 THEN y = a1 ELSE y = a2</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>a0</strong> (<em>ndarray</em>) – compare to input <cite>x &gt;= a0</cite></p></li>
 <li><p><strong>a1</strong> (<em>ndarray</em>) – result if <cite>x &gt;= a0</cite></p></li>
 <li><p><strong>a2</strong> (<em>ndarray</em>) – result if <cite>x &lt; a0</cite></p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>IF y &lt;= a0 THEN x = a1 ELSE x = a2</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -833,20 +828,20 @@ otherwise <cite>y = 0</cite>.</p>
 <div><p>y = ifgt(x, a0, a1, a2) means <cite>IF x &gt; a0 THEN y = a1 ELSE y = a2</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>a0</strong> (<em>ndarray</em>) – compare to input <cite>x &gt; a0</cite></p></li>
 <li><p><strong>a1</strong> (<em>ndarray</em>) – result if <cite>x &gt; a0</cite></p></li>
 <li><p><strong>a2</strong> (<em>ndarray</em>) – result if <cite>x &lt;= a0</cite></p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>IF y &gt; a0 THEN x = a1 ELSE x = a2</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -860,20 +855,20 @@ otherwise <cite>y = 0</cite>.</p>
 <div><p>y = ifle(x, a0, a1, a2) means <cite>IF x &gt;= a0 THEN y = a1 ELSE y = a2</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>a0</strong> (<em>ndarray</em>) – compare to input <cite>x &lt;= a0</cite></p></li>
 <li><p><strong>a1</strong> (<em>ndarray</em>) – result if <cite>x &lt;= a0</cite></p></li>
 <li><p><strong>a2</strong> (<em>ndarray</em>) – result if <cite>x &gt; a0</cite></p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>IF y &gt;= a0 THEN x = a1 ELSE x = a2</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -887,20 +882,20 @@ otherwise <cite>y = 0</cite>.</p>
 <div><p>y = iflt(x, a0, a1, a2) means <cite>IF x &lt; a0 THEN y = a1 ELSE y = a2</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>a0</strong> (<em>ndarray</em>) – compare to input <cite>x &lt; a0</cite></p></li>
 <li><p><strong>a1</strong> (<em>ndarray</em>) – result if <cite>x &lt; a0</cite></p></li>
 <li><p><strong>a2</strong> (<em>ndarray</em>) – result if <cite>x &gt;= a0</cite></p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>IF x &lt; a0 THEN y = a1 ELSE y = a2</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -914,7 +909,7 @@ otherwise <cite>y = 0</cite>.</p>
 <div><p>y = ifne(x, a0, a1, a2) means <cite>IF x != a0 THEN y = a1 ELSE y = a2</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>a0</strong> (<em>ndarray</em>) – compare to input <cite>x != a0</cite></p></li>
@@ -924,14 +919,14 @@ otherwise <cite>y = 0</cite>.</p>
 <li><p><strong>a0</strong> – </p></li>
 <li><p><strong>a1</strong> – </p></li>
 <li><p><strong>a2</strong> – </p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>IF y != a0 THEN x = a1 ELSE x = a2</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -948,19 +943,19 @@ otherwise <cite>y = 0</cite>.</p>
 <p>This function may be used to check values lying in between certain limits.</p>
 <p>If one of the limits is exceeded the value is set to <cite>undef</cite>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>mini</strong> (<em>ndarray</em>) – lower threshold</p></li>
 <li><p><strong>maxi</strong> (<em>ndarray</em>) – upper threshold</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>underflows or overflows replaced by <cite>undef</cite></p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -974,19 +969,19 @@ otherwise <cite>y = 0</cite>.</p>
 <div><p>y = lin(x, a0, a1) means <cite>y = a0 + a1 * x</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
-<li><p><strong>a0</strong> (<em>ndarray</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – parameter 1</p></li>
-<li><p><strong>a1</strong> (<em>ndarray</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – parameter 2</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>a0</strong> (<em>ndarray</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – parameter 1</p></li>
+<li><p><strong>a1</strong> (<em>ndarray</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – parameter 2</p></li>
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>linear function</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1000,22 +995,22 @@ otherwise <cite>y = 0</cite>.</p>
 <div><p>y = maxi(x) means <cite>y = max(x[0], x[1], …, x[n-1])</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
-<li><p><strong>axis</strong> (<em>None</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><em>tuple of ints</em><em>, </em><em>optional</em>) – <p>Axis or axes along which the maximum are computed.
+<li><p><strong>axis</strong> (<em>None</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a><em> of </em><em>ints</em><em>, </em><em>optional</em>) – <p>Axis or axes along which the maximum are computed.
 The default is to compute the maximum of the flattened array.</p>
 <p>If this is a tuple of ints, a maximum is performed over multiple axes,
 instead of a single axis or all the axes as before.</p>
 </p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>maximum value</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1029,22 +1024,22 @@ instead of a single axis or all the axes as before.</p>
 <div><p>y = mean(x) means <cite>y = (x[0] + x[1] + … + x[n-1]) / n</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
-<li><p><strong>axis</strong> (<em>None</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><em>tuple of ints</em><em>, </em><em>optional</em>) – <p>Axis or axes along which the means are computed.
+<li><p><strong>axis</strong> (<em>None</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a><em> of </em><em>ints</em><em>, </em><em>optional</em>) – <p>Axis or axes along which the means are computed.
 The default is to compute the mean of the flattened array.</p>
 <p>If this is a tuple of ints, a mean is performed over multiple axes,
 instead of a single axis or all the axes as before.</p>
 </p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>mean value</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1064,20 +1059,20 @@ instead of a single axis or all the axes as before.</p>
 <p>If <cite>swd &lt; swdmin</cite> (50 W m-2) or <cite>swu &lt; swumin</cite> (10 W m-2),
 the result is undef.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>swd</strong> (<em>ndarray</em>) – shortwave downward radiation [W m-2]</p></li>
 <li><p><strong>swu</strong> (<em>ndarray</em>) – shortwave upward radiation [W m-2]</p></li>
-<li><p><strong>swdmin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – If <cite>swd</cite> &lt; <cite>swdmin</cite> the result is undef (default: 50).</p></li>
-<li><p><strong>swumin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – If <cite>swu</cite> &lt; <cite>swumin</cite> the result is undef (default: 10).</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>swdmin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – If <cite>swd</cite> &lt; <cite>swdmin</cite> the result is undef (default: 50).</p></li>
+<li><p><strong>swumin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – If <cite>swu</cite> &lt; <cite>swumin</cite> the result is undef (default: 10).</p></li>
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>albedo in %</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1097,22 +1092,22 @@ limits</p>
 </div></blockquote>
 <p>If <cite>swd &lt; swdmin</cite> or <cite>swu &lt; swumin</cite>, the result is <cite>undef</cite>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>swd</strong> (<em>ndarray</em>) – shortwave downward radiation [W m-2]</p></li>
 <li><p><strong>swu</strong> (<em>ndarray</em>) – shortwave upward radiation [W m-2]</p></li>
-<li><p><strong>swdmin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – If <cite>swd</cite> &lt; <cite>swdmin</cite> the result is undef.</p></li>
-<li><p><strong>swumin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – If <cite>swu</cite> &lt; <cite>swumin</cite> the result is undef.</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>swdmin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – If <cite>swd</cite> &lt; <cite>swdmin</cite> the result is undef.</p></li>
+<li><p><strong>swumin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – If <cite>swu</cite> &lt; <cite>swumin</cite> the result is undef.</p></li>
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 <li><p><strong>undef</strong> – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>albedo in %</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1133,18 +1128,18 @@ formulas:</p>
 <p><cite>y = 234.175 * ln(E / 6.1078) / (17.08085 - ln(E / 6.1078))</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>T</strong> (<em>ndarray</em>) – air temperature [degC]</p></li>
 <li><p><strong>rh</strong> (<em>ndarray</em>) – relative humidity [%]</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>dew point temperature in degC</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1165,19 +1160,19 @@ following formulas:</p>
 <p><cite>y = 0.1 * E / (0.001 * p * 100 * 0.001)</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>T</strong> (<em>ndarray</em>) – air temperature [degC]</p></li>
 <li><p><strong>rh</strong> (<em>ndarray</em>) – relative humidity [%]</p></li>
 <li><p><strong>p</strong> (<em>ndarray</em>) – air pressure [hPa = mbar]</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>water vapour concentration in mmol mol-1</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1198,19 +1193,19 @@ formulas:</p>
 <p><cite>y = 100 * E / Es</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>T</strong> (<em>ndarray</em>) – air temperature [degC]</p></li>
 <li><p><strong>h</strong> (<em>ndarray</em>) – water vapour concentration [mmol mol-1]</p></li>
 <li><p><strong>p</strong> (<em>ndarray</em>) – air pressure [hPa = mbar]</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>relative humidity in %</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1233,19 +1228,19 @@ and <cite>fl</cite> is the factor for long wave radiation (reciprocal value of
 sensitivity) in W m-2 per mV.</p>
 <p>The function assumes that <cite>fl</cite> was already applied before.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>y</strong> (<em>ndarray</em>) – output voltage of the net radiometer [mV]</p></li>
 <li><p><strong>Tp</strong> (<em>ndarray</em>) – pyranometer temperature, i.e. the temperature of the net radiometer
 body [degC]</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>total radiation in W m-2</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1268,19 +1263,19 @@ formulas:</p>
 <p><cite>y = p * 100 / (287.05 * (Tv + T0))</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>T</strong> (<em>ndarray</em>) – air temperature [degC]</p></li>
 <li><p><strong>rh</strong> (<em>ndarray</em>) – relative humidity [%]</p></li>
 <li><p><strong>p</strong> (<em>ndarray</em>) – air pressure [hPa = mbar]</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>air density in kg m-3</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1301,19 +1296,19 @@ formulas:</p>
 <p><cite>y = 622 * E / (p - 0.378 * E)</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>T</strong> (<em>ndarray</em>) – air temperature [degC]</p></li>
 <li><p><strong>rh</strong> (<em>ndarray</em>) – relative humidity [%]</p></li>
 <li><p><strong>p</strong> (<em>ndarray</em>) – air pressure [hPa = mbar]</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>specific humidity in g kg-1</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1332,18 +1327,18 @@ formula:</p>
 <div><p><cite>y = (T + T0) * (1000 / p)**0.286</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>T</strong> (<em>ndarray</em>) – air temperature [degC]</p></li>
 <li><p><strong>p</strong> (<em>ndarray</em>) – air pressure [hPa = mbar]</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>potential temperature in K</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1364,18 +1359,18 @@ formula:</p>
 <p>where <cite>sigma = 5.67 * 10**-8</cite> W m-2 K-4 is the
 Stephan-Boltzmann constant.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>Rl</strong> (<em>ndarray</em>) – longwave radiation [W m-2]</p></li>
 <li><p><strong>epsilon</strong> (<em>ndarray</em>) – long wave emissivity of the surface [0-1]</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>radiation temperature in degC</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1393,19 +1388,19 @@ Stephan-Boltzmann constant.</p>
 <div><p><cite>y = u * cos (a) + v * sin (a)</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>u</strong> (<em>ndarray</em>) – u-component of the wind vector</p></li>
 <li><p><strong>v</strong> (<em>ndarray</em>) – v-component of the wind vector</p></li>
 <li><p><strong>a</strong> (<em>ndarray</em>) – rotation angle (positive is clockwise) [degree]</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>rotated u-component</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1428,18 +1423,18 @@ formulas:</p>
 <p><cite>IF u &lt; 0 THEN y = 90 - arctan(v / u)</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>u</strong> (<em>ndarray</em>) – u-component of the wind vector</p></li>
 <li><p><strong>v</strong> (<em>ndarray</em>) – v-component of the wind vector</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>horizontal wind velocity</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1458,18 +1453,18 @@ formula:</p>
 <div><p><cite>y = sqrt(u**2 + v**2)</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>u</strong> (<em>ndarray</em>) – u-component of the wind vector</p></li>
 <li><p><strong>v</strong> (<em>ndarray</em>) – v-component of the wind vector</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>horizontal wind velocity</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1489,18 +1484,18 @@ the following formulas:</p>
 <p><cite>y = Es * rh / 100</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>T</strong> (<em>ndarray</em>) – air temperature [degC]</p></li>
 <li><p><strong>rh</strong> (<em>ndarray</em>) – relative humidity [%]</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>actual water vapour pressure in mbar (hPa)</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1521,18 +1516,18 @@ the following formulas:</p>
 <p><cite>y = Es - E</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>T</strong> (<em>ndarray</em>) – air temperature [degC]</p></li>
 <li><p><strong>rh</strong> (<em>ndarray</em>) – relative humidity [%]</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>water vapour pressure deficit in mbar (hPa)</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1551,17 +1546,17 @@ to the following formula:</p>
 <div><p><cite>y = 6.1078 * exp(17.08085 * T / (234.175 + T))</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>T</strong> (<em>ndarray</em>) – air temperature [degC]</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>saturation water vapour pressure in mbar (hPa)</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1579,19 +1574,19 @@ to the following formula:</p>
 <div><p><cite>y = -u * sin (a) + v * cos (a)</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>u</strong> (<em>ndarray</em>) – u-component of the wind vector</p></li>
 <li><p><strong>v</strong> (<em>ndarray</em>) – v-component of the wind vector</p></li>
 <li><p><strong>a</strong> (<em>ndarray</em>) – rotation angle (positive is clockwise) [degree]</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>rotated v-component</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1612,18 +1607,18 @@ formulas:</p>
 <p><cite>IF y &lt;= 360 THEN y = y - 360</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>wd</strong> (<em>ndarray</em>) – wind direction [degree]</p></li>
 <li><p><strong>a</strong> (<em>ndarray</em>) – rotation angle (positive is clockwise) [degree]</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>rotated wind direction</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1643,18 +1638,18 @@ formula:</p>
 <div><p><cite>y = -wv * sin(wd)</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>wv</strong> (<em>ndarray</em>) – horizontal wind velocity [m s-1]</p></li>
 <li><p><strong>wd</strong> (<em>ndarray</em>) – horizontal wind direction [degree]</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>u-component of the wind vector</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1674,18 +1669,18 @@ formula:</p>
 <div><p><cite>y = -wv * cos(wd)</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>wv</strong> (<em>ndarray</em>) – horizontal wind velocity [m s-1]</p></li>
 <li><p><strong>wd</strong> (<em>ndarray</em>) – horizontal wind direction [degree]</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>v-component of the wind vector</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1699,22 +1694,22 @@ formula:</p>
 <div><p>y = mini(x) means <cite>y = min(x[0], x[1], …, x[n-1])</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
-<li><p><strong>axis</strong> (<em>None</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><em>tuple of ints</em><em>, </em><em>optional</em>) – <p>Axis or axes along which the minimum are computed.
+<li><p><strong>axis</strong> (<em>None</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a><em> of </em><em>ints</em><em>, </em><em>optional</em>) – <p>Axis or axes along which the minimum are computed.
 The default is to compute the minimum of the flattened array.</p>
 <p>If this is a tuple of ints, a minimum is performed over multiple axes,
 instead of a single axis or all the axes as before.</p>
 </p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>minimum value</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1728,20 +1723,20 @@ instead of a single axis or all the axes as before.</p>
 <div><p>y = quad(x, a0, a1, a2) means <cite>y = a0 + a1 * x + a2 * x**2</cite></p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
-<li><p><strong>a0</strong> (<em>ndarray</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – parameter 1</p></li>
-<li><p><strong>a1</strong> (<em>ndarray</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – parameter 1</p></li>
-<li><p><strong>a2</strong> (<em>ndarray</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – parameter 1</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>a0</strong> (<em>ndarray</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – parameter 1</p></li>
+<li><p><strong>a1</strong> (<em>ndarray</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – parameter 1</p></li>
+<li><p><strong>a2</strong> (<em>ndarray</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – parameter 1</p></li>
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>2nd order function</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1759,19 +1754,19 @@ instead of a single axis or all the axes as before.</p>
 <p>This function may be used to adjust relative humidity values of a little
 bit more than 100% to 100%.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>high</strong> (<em>ndarray</em>) – upper threshold</p></li>
 <li><p><strong>ishigh</strong> (<em>None</em><em> or </em><em>ndarray</em><em>, </em><em>optional</em>) – if not None, use ishigh in case of y &gt; high</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>overflows replaced by new value</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1789,19 +1784,19 @@ bit more than 100% to 100%.</p>
 <p>This function may be used to adjust small negative values of short wave
 radiation during nighttime to zero values.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – input variable</p></li>
 <li><p><strong>low</strong> (<em>ndarray</em>) – lower threshold</p></li>
 <li><p><strong>islow</strong> (<em>None</em><em> or </em><em>ndarray</em><em>, </em><em>optional</em>) – if not None, use islow in case of y &lt; low</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>underflows replaced by new value</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1816,18 +1811,18 @@ radiation during nighttime to zero values.</p>
 float.</p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>a</strong> (<em>ndarray</em>) – input variable 1</p></li>
 <li><p><strong>b</strong> (<em>ndarray</em>) – input variable 2</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Addition</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1841,17 +1836,17 @@ float.</p>
 <div><p>y = varchs(a) means <cite>y = -a</cite>, where <cite>a</cite> is ndarray or float.</p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>a</strong> (<em>ndarray</em>) – input variable</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Changed sign</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1866,18 +1861,18 @@ float.</p>
 float.</p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>a</strong> (<em>ndarray</em>) – dividend</p></li>
 <li><p><strong>b</strong> (<em>ndarray</em>) – divisor</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Division</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1891,17 +1886,17 @@ float.</p>
 <div><p>y = varexp(a) means <cite>y = exp(a)</cite>, where <cite>a</cite> is ndarray or float.</p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>a</strong> (<em>ndarray</em>) – exponent</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Exponentiation</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1915,17 +1910,17 @@ float.</p>
 <div><p>y = varlog(a) means <cite>y = ln(a)</cite>, where <cite>a</cite> is ndarray or float.</p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>a</strong> (<em>ndarray</em>) – input variable</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Natural logarithm</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1940,18 +1935,18 @@ float.</p>
 float.</p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>a</strong> (<em>ndarray</em>) – input variable 1</p></li>
 <li><p><strong>b</strong> (<em>ndarray</em>) – input variable 2</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Multiplication</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1966,18 +1961,18 @@ float.</p>
 float.</p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>a</strong> (<em>ndarray</em>) – base</p></li>
 <li><p><strong>b</strong> (<em>ndarray</em>) – exponent</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Exponentiation</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -1991,17 +1986,17 @@ float.</p>
 <div><p>y = varsqr(a) means <cite>y = sqrt(a)</cite>, where <cite>a</cite> is ndarray or float.</p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>a</strong> (<em>ndarray</em>) – input variable</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Square root</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -2015,17 +2010,17 @@ float.</p>
 <div><p>y = varsqrt(a) means <cite>y = sqrt(a)</cite>, where <cite>a</cite> is ndarray or float.</p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>a</strong> (<em>ndarray</em>) – input variable</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Square root</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
@@ -2040,24 +2035,24 @@ float.</p>
 float.</p>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>a</strong> (<em>ndarray</em>) – input variable 1</p></li>
 <li><p><strong>b</strong> (<em>ndarray</em>) – input variable 2</p></li>
-<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
+<li><p><strong>undef</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – elements are excluded from the calculations if any of the inputs equals
 <cite>undef</cite> (default: -9999.)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Subtraction</p>
 </dd>
-<dt class="field-odd">Return type</dt>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>ndarray</p>
 </dd>
 </dl>
 </dd></dl>
 
-</div>
+</section>
 
 
           </div>
@@ -2082,7 +2077,56 @@ float.</p>
 <li class="toctree-l1"><a class="reference internal" href="index.html">loggertools</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="api.html">API Reference</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="api.html#subpackages">Subpackages</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">loggertools</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">loggertools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.bit_test"><code class="docutils literal notranslate"><span class="pre">bit_test()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.cubic"><code class="docutils literal notranslate"><span class="pre">cubic()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.hms"><code class="docutils literal notranslate"><span class="pre">hms()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.ifeq"><code class="docutils literal notranslate"><span class="pre">ifeq()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.ifge"><code class="docutils literal notranslate"><span class="pre">ifge()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.ifgt"><code class="docutils literal notranslate"><span class="pre">ifgt()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.ifle"><code class="docutils literal notranslate"><span class="pre">ifle()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.iflt"><code class="docutils literal notranslate"><span class="pre">iflt()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.ifne"><code class="docutils literal notranslate"><span class="pre">ifne()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.limits"><code class="docutils literal notranslate"><span class="pre">limits()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.lin"><code class="docutils literal notranslate"><span class="pre">lin()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.maxi"><code class="docutils literal notranslate"><span class="pre">maxi()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.mean"><code class="docutils literal notranslate"><span class="pre">mean()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.met_alb"><code class="docutils literal notranslate"><span class="pre">met_alb()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.met_albl"><code class="docutils literal notranslate"><span class="pre">met_albl()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.met_dpt"><code class="docutils literal notranslate"><span class="pre">met_dpt()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.met_h2oc"><code class="docutils literal notranslate"><span class="pre">met_h2oc()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.met_h2oc_rh"><code class="docutils literal notranslate"><span class="pre">met_h2oc_rh()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.met_lwrad"><code class="docutils literal notranslate"><span class="pre">met_lwrad()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.met_rho"><code class="docutils literal notranslate"><span class="pre">met_rho()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.met_sh"><code class="docutils literal notranslate"><span class="pre">met_sh()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.met_tpot"><code class="docutils literal notranslate"><span class="pre">met_tpot()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.met_trad"><code class="docutils literal notranslate"><span class="pre">met_trad()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.met_urot"><code class="docutils literal notranslate"><span class="pre">met_urot()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.met_uv_wd"><code class="docutils literal notranslate"><span class="pre">met_uv_wd()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.met_uv_wv"><code class="docutils literal notranslate"><span class="pre">met_uv_wv()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.met_vpact"><code class="docutils literal notranslate"><span class="pre">met_vpact()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.met_vpdef"><code class="docutils literal notranslate"><span class="pre">met_vpdef()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.met_vpmax"><code class="docutils literal notranslate"><span class="pre">met_vpmax()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.met_vrot"><code class="docutils literal notranslate"><span class="pre">met_vrot()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.met_wdrot"><code class="docutils literal notranslate"><span class="pre">met_wdrot()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.met_wvwd_u"><code class="docutils literal notranslate"><span class="pre">met_wvwd_u()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.met_wvwd_v"><code class="docutils literal notranslate"><span class="pre">met_wvwd_v()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.mini"><code class="docutils literal notranslate"><span class="pre">mini()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.quad"><code class="docutils literal notranslate"><span class="pre">quad()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.sethigh"><code class="docutils literal notranslate"><span class="pre">sethigh()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.setlow"><code class="docutils literal notranslate"><span class="pre">setlow()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.varadd"><code class="docutils literal notranslate"><span class="pre">varadd()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.varchs"><code class="docutils literal notranslate"><span class="pre">varchs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.vardiv"><code class="docutils literal notranslate"><span class="pre">vardiv()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.varexp"><code class="docutils literal notranslate"><span class="pre">varexp()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.varlog"><code class="docutils literal notranslate"><span class="pre">varlog()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.varmul"><code class="docutils literal notranslate"><span class="pre">varmul()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.varpot"><code class="docutils literal notranslate"><span class="pre">varpot()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.varsqr"><code class="docutils literal notranslate"><span class="pre">varsqr()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.varsqrt"><code class="docutils literal notranslate"><span class="pre">varsqrt()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#loggertools.loggertools.varsub"><code class="docutils literal notranslate"><span class="pre">varsub()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
@@ -2128,11 +2172,11 @@ float.</p>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2014-2022, Matthias Cuntz, Olaf Kolle.
+      &copy;2014-2023, Matthias Cuntz, Olaf Kolle.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.1.1</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.1.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
       
       |
       <a href="_sources/loggertools.rst.txt"
